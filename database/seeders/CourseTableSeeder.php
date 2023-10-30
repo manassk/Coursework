@@ -18,5 +18,7 @@ class CourseTableSeeder extends Seeder
         $c1->name="Software Eng";
         $c1->credits=20;
         $c1->save();
+
+        Course::factory()->count(9)->create();
     }
 }
